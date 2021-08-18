@@ -42,7 +42,7 @@
 
 - [Html](https://es.wikipedia.org/wiki/HTML)
 - [Css](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada)
--[Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## Características
 
