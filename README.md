@@ -35,7 +35,7 @@
 
 ## Vision General
 
-![captura](https://user-images.githubusercontent.com/70858276/127702202-824dced9-4a0e-4f6f-9652-3dedd579884f.png)
+![interior](https://user-images.githubusercontent.com/70858276/129986045-e26c9640-f5f1-408d-bfb9-5e48f7fa96d1.png)
 
 
 ### Construido con
