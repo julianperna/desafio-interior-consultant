@@ -11,53 +11,67 @@ header {
   background-color: transparent;
   width: 100%;
 }
-#btn-menu {
-  display: none;
-}
-
-h1 {
+h1{
   text-transform: uppercase;
   padding: 8px;
-  font-size: 0.875rem;
+  font-size: 14px;
+  line-height: 16px;
   border: 1px solid #ffffff;
   color: #f8f4f8;
   font-family: "Crimson Pro", serif;
-  margin-left: 30px;
   margin-right: 500px;
+  margin-left: 30px;
 }
+.menu_li{
+border-bottom: 1px solid #ffffff;
+}
+nav{
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      margin-top: 10px;
+      min-height:8vh;
+      margin-left: -20px;
+  }
 
-header label {
-  display: none;
-  padding: 10px;
-  width: 22px;
-  height: 22px;
-}
-header label:hover {
-  cursor: pointer;
-}
-.menu {
-  font-family: "Montserrat", sans-serif;
-}
-.menu ul {
-  margin-top: 45px;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
+  .ham{
+    display:none;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding:0;
+    }
+    
+    .ham span{
+        background-color: #f3f3f3;
+        display:block;
+        height:3px;
+        width: 28px;
+        margin:10px auto;
+        border-radius:2px;    
+    }
+  .enlaces-menu{
+      display:flex;
+      padding:0;
+  }
+  .enlaces-menu li{
+      padding: 0 40px;
+      list-style-type: none;
+      transition: 0.3s;
+  }
 
-.menu li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  margin-right: 40px;
+  .enlaces-menu li a{
+      text-decoration:none;
+      font-size: 18px;
+      color:#FFFFFF;
+      font-weight: bold;
+  }
+main{
+  width: 100%;
 }
-.nav_li {
-  border-bottom: 2px solid #fff;
-}
-
 section {
-  width: 95%;
+  width: 100%;
   display: flex;
   margin: 10rem auto;
   margin-bottom: 15rem;
@@ -162,30 +176,121 @@ footer {
 }
 .footer-p a {
   color: #333333;
+  text-decoration: none;
 }
-@media (max-width: 768px) {
-  header label {
-    display: block;
+
+  @media (max-width:768px) {
+     h1 {
+       font-weight: 200;
+       font-size: 14px;
+       line-height: 16px;
+     }
+      .ham{
+          display:block;
+          cursor:pointer;
+          position: absolute; 
+          top: 35px;
+    right: 20px;
+          transition: 0.2s  0.1s; 
+      }
+      nav{
+          flex-direction:column;
+          align-items: flex-start;
+          padding-top: 25px;
+          padding-bottom: 25px;
+      }
+      .enlaces-menu{
+          flex-direction:column;
+          justify-content: space-around;
+          align-items:center;
+          height: 92vh;         
+          margin:0;
+          padding:0; 
+          display:none;
+          opacity:0;
+          transition: opacity 5s ease-out;
+          width:100%;
+      
+         
+      }
+      .enlaces-menu li{
+        text-align:center;
+        width:100%;
+        padding:20px;    
+    }
+
+/* Animaciones */
+  
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
-  .menu {
-    position: absolute;
-    background: transparent;
-    margin-left: -70%;
-    transition: all 0.5s;
-  }
-  h1 {
-    display: none;
+.titulo.desactivado{
+  opacity: 0;
+}
+.descripcion.desactivado{
+  opacity: 0;
+}
+.footer-p.desactivado{
+  opacity: 0;
+}
+  .enlaces-menu.activado{
+      display:flex; 
+      animation: muestraMenu 1s ease-in-out both;
   }
 
-  .menu ul {
-    flex-direction: column;
-    align-items: center;
+  .br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
   }
-  .nav_a {
-    padding: 10px;
+  
+  .br-2.animado{
+    opacity: 0;
   }
-  #btn-menu:checked ~ .menu {
-    margin: 150px auto;
-    width: 100%;
+  .br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
   }
+
+ .ham.girar:hover{
+     transform:rotate(360deg);
+ }
+ section .box-left {
+   width: 100%;
+  }
+  .descripcion{
+    margin: 5rem 10px;
+  }
+section .box-left h2{
+  font-size: 36px;
+line-height: 46px;
+}
+section .box-left p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+line-height: 17px;
+}
+section .box-left .box-read-more{
+  font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+}
+ section .box-right{
+ width: 100%;
+    margin-left: -380px;
+    margin-top: 18rem;
+}
+.box-right .image{
+  width: 100%;
+}
+.box-right .image{
+      height: 250px;
+      background-color: #181719;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+
+}
+
+
 }
