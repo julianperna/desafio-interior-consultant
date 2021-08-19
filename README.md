@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://julianperna.github.io/desafio-interior-consultant/">
       Demo
     </a>
     <span> | </span>
@@ -52,6 +52,6 @@ Esta aplicación / sitio se creó como un envío a un desafío [DevChallenges](h
 
 ## Contacto
 
-- Website [https://julianperna.github.io/desafio-team-page/](https://julianperna.github.io/desafio-team-page/)
+- Website [https://julianperna.github.io/desafio-interior-consultant/](https://julianperna.github.io/desafio-interior-consultant/)
 - GitHub [julianperna](https://github.com/julianperna)
 
